@@ -1,0 +1,96 @@
+/* Main page styling */
+body {
+    font-family: Arial, sans-serif;  /* keeping it simple */
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fafafa;  /* added a subtle background */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;  /* bit more spacing */
+}
+
+/* Form container */
+#create-task-form {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);  /* subtle depth */
+}
+
+/* Text input field */
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;  /* forgot to add border initially */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;  /* nice touch for focus state */
+}
+
+/* Submit button */
+input[type="submit"] {
+    padding: 8px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #45a049;  /* darker green on hover */
+}
+
+/* Task list */
+#tasks {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual task styling */
+#tasks li {
+    background: white;
+    padding: 12px;  /* slightly more padding for better look */
+    margin-bottom: 8px;  /* increased spacing between tasks */
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;  /* helps with button alignment */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete button */
+.delete-btn {
+    background: linear-gradient(to bottom, #ff6b6b, #ee5a52);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-shrink: 0;  /* prevents button from shrinking */
+}
+
+.delete-btn:hover {
+    background: linear-gradient(to bottom, #ff5252, #d32f2f);
+    transform: translateY(-1px);  /* subtle lift effect */
+}
+
+/* Maybe add some responsive stuff later */
+@media (max-width: 480px) {
+    input[type="text"] {
+        width: 60%;  /* adjust for smaller screens */
+    }
+}

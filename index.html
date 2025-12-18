@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskLister - Simple To-Do List</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My To-Do List</h1>
+    
+    <form id="create-task-form">
+        <label for="new-task-description">What do you need to do?</label><br>
+        <input 
+            type="text" 
+            id="new-task-description" 
+            placeholder="Enter a new task..."
+        >
+        <input type="submit" value="Add Task">
+    </form>
+    
+    <h2>Tasks:</h2>
+    <ul id="tasks"></ul>
+    
+    <script src="./src/index.js"></script>
+</body>
+</html>
